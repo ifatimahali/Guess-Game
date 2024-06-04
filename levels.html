@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة التخمين</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="level-selection">
+        <h1>اختر المستوى</h1>
+        <button class="btn" onclick="startGame('easy')">بسيط</button>
+        <button class="btn" onclick="startGame('medium')">متوسط</button>
+        <button class="btn" onclick="startGame('hard')">صعب</button>
+    </div>
+    <div id="game" style="display:none;" class="container" dir="rtl">
+        <div id="level" dir="rtl"></div>
+        <div id="stage" dir="rtl"></div>
+        <div id="score" dir="rtl"></div>
+        <div id="image-container" dir="rtl"></div>
+        <div dir="rtl" id="phrase-container"></div>
+        <div dir="rtl" id="letters-container" class="keyboard"></div>
+        <button class="btn" onclick="goBack()">عودة</button>
+    </div>
+    <div id="message" class="message"></div>
+    <div id="animation" class="animation" style="display:none;">
+        <img src="clapping.gif" alt="Win Animation">
+    </div>
+    <div id="level-up-animation" class="animation" style="display:none;">
+        <img src="winnsss.gif" alt="Level Animation">
+    </div>
+    <div id="lose-animation" class="animation" style="display:none;">
+        <img src="loseeee.gif" alt="Lose Animation">
+    </div>
+    <div id="results" class="results" style="display:none;">
+        <h1>النتيجة النهائية</h1>
+        <p id="final-score"></p>
+        <p id="correct-answers"></p>
+        <button class="btn" onclick="replay()">إعادة اللعب</button>
+        <button class="btn" onclick="goHome()">الرجوع للصفحة الرئيسية</button>
+    </div>
+    <audio id="clap-sound" src="clap.mp3"></audio>
+    <audio id="lose-sound" src="lose.wav"></audio>
+    <script src="main.js"></script>
+</body>
+</html>

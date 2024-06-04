@@ -1,0 +1,125 @@
+body {
+    background-image: url("photo1717448686.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+}
+#level-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #245872;
+    margin-bottom: 20px;
+}
+#level-selection button {
+    font-size: 2rem; 
+    padding: 1rem 2rem; 
+    margin: 1rem 0; 
+    width: 50%; 
+    max-width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: #EAEEE0;
+    border: 1px solid #EAEEE0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #245872;
+}
+#image-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+.keyboard button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+#phrase-container {
+    font-size: 24px;
+    margin: 20px 0;
+}
+.message {
+    position: fixed;
+    top: 50px; 
+    left: 50%;
+    color: #000;
+    font-size: 24px;
+    padding: 10px 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: #245872;
+    background-color: #EAEEE0;
+    border: 1px solid #EAEEE0;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: #cfd4c1;
+    transform: scale(1.05);
+}
+#score, #stage {
+    font-size: 18px;
+    margin: 0px 0;
+    
+}
+.animation {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.message , .level{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+.results {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.results h1 {
+    font-size: 2.5rem;
+    color: #245872;
+}
+
+.results p {
+    font-size: 1.5rem;
+    color: #245872;
+    margin: 10px 0;
+}

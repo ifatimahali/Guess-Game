@@ -1,0 +1,43 @@
+body {
+    background-image: url('photo1717448686.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    text-align: center;
+}
+img {
+    width: 40vw; 
+}
+.image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+button {
+    width: 10vw;
+    height: 7vh;
+    background-color: #EAEEE0;
+    border: 1px solid #EAEEE0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #245872;
+}
+button:hover {
+    background-color: #cfd4c1;
+    transform: scale(1.05);
+}

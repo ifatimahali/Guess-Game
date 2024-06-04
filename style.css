@@ -67,11 +67,15 @@ h1{
 }
 .message {
     position: fixed;
-    top: 50px; 
+    top: 30px; 
     left: 50%;
+    transform: translateX(-50%);
     color: #000;
     font-size: 24px;
     padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 .btn {
     display: inline-block;
